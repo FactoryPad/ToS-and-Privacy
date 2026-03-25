@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TikTok Callback</title>
+  <meta charset="utf-8" />
+  <title>TikTok Callback</title>
 </head>
 <body>
+  <h1>TikTok Callback</h1>
+  <p>You can close this page.</p>
+  <script>
+    document.body.insertAdjacentHTML(
+      "beforeend",
+      "<pre>" + window.location.href.replace(/</g, "&lt;") + "</pre>"
+    );
+  </script>
 </body>
 </html>
